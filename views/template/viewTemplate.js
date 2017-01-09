@@ -7,7 +7,7 @@ require('../../scss/style.scss');
 
 
 // TODO: add your imported components and containers
-const About = () => (
+const viewTemplate = () => (
 
   <div>
     VIEW TEMPLATE
@@ -16,4 +16,4 @@ const About = () => (
 );
 
 
-export default About;
+export default viewTemplate;

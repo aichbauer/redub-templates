@@ -12,7 +12,7 @@ import {
 // TODO: change templateReducer
 // eg. -> you fetched all user and save them into state userlist
 // userList
-export default function templateReducer(state = {
+export default function reducerTemplate(state = {
 
   isFetching: false,
 

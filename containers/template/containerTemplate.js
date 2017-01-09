@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 
 // TODO: change ComponentTemplate
 // eg. a table with all the users -> UserTable
-class ComponentTemplate extends Component {
+class containerTemplate extends Component {
 
   componentDidMount() {
 
@@ -64,4 +64,4 @@ function mapStateToProps(state) {
 }
 
 // TODO: change ComponentTemplate to the name of your Component
-export default connect(mapStateToProps, matchDispatchToProps)(ComponentTemplate);
+export default connect(mapStateToProps, matchDispatchToProps)(containerTemplate);
