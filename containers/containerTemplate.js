@@ -1,67 +1,38 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
-
 
 // TODO: change ComponentTemplate
 // eg. a table with all the users -> UserTable
-class containerTemplate extends Component {
-
-  componentDidMount() {
-
-  }
-
-
-  componentWillMount(){
-
-  }
-
-
-  componentDidUpdate(){
-    
-  }
-
-
+class {{ContainerTemplate}} extends Component {
   render() {
-
     // TODO: Add your Container
     return (
-
       <div>
       </div>
-
     );
-
   }
-
 }
-
 
 // TODO: add your actions
 // seperate multiple actions with a comma
 // eg. login ->
-// import your login action at the top of this document 
+// import your login action at the top of this document
 // import login from '../actions/auth/login'
 // and then inside of bindActionCreators
 // login: login
-function matchDispatchToProps(dispatch) {
-
-  return bindActionCreators({}, dispatch);
-
-}
+const matchDispatchToProps = (dispatch) => (bindActionCreators({
+  // your actions
+}, dispatch));
 
 
 // TODO: add your states
 // seperate multiple states with a comma
-// eg. is Authenticated? -> 
-// inside of return {} 
+// eg. is Authenticated? ->
+// inside of return {}
 // isAuthenticated: state.isAuthenticated
-function mapStateToProps(state) {
+const mapStateToProps = (state) => ({
+  // add you state
+})
 
-  return {}
-
-}
-
-// TODO: change ComponentTemplate to the name of your Component
-export default connect(mapStateToProps, matchDispatchToProps)(containerTemplate);
+export default connect(mapStateToProps, matchDispatchToProps)({{ContainerTemplate}});

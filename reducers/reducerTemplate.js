@@ -1,23 +1,19 @@
 // TODO: change the path to your action
 // TODO: change REQUEST, SUCCESS, FAILURE to the consts you export there
 import {
-
-  REQUEST, 
-  SUCCESS, 
+  REQUEST,
+  SUCCESS,
   FAILURE
-  
-} from '../../actions/path to your action';
-
+} from '../../actions/path/to/your/action';
 
 // TODO: change templateReducer
 // eg. -> you fetched all user and save them into state userlist
 // userList
-export default function reducerTemplate(state = {
+const {{reducerTemplate}} = (state = {
 
   isFetching: false,
 
-}, action) {
-
+}, action) => {
   // TODO: change case REQUEST, SUCCESS, FAILURE
   // to the constats you imported
   // add your state
@@ -26,36 +22,23 @@ export default function reducerTemplate(state = {
   switch (action.type) {
 
     case REQUEST:
-
       return Object.assign({}, state, {
-
-        isFetching: true,
-
+        isFetching: action.isFetching,
       });
-
 
     case SUCCESS:
-
       return Object.assign({}, state, {
-
-        isFetching: false,
-
+        isFetching: action.isFetching,
       });
-
 
     case FAILURE:
-
       return Object.assign({}, state, {
-
-        isFetching: false,
-
+        isFetching: action.isFetching,
       });
 
-
     default:
-    
       return state
-
   }
+};
 
-}
+export default {{reducerTemplate}};

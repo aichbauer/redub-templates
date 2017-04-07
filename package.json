@@ -1,0 +1,26 @@
+{
+  "name": "redub-templates",
+  "version": "1.0.0",
+  "description": "the template files for redub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudolfsonjunior/redub-templates.git"
+  },
+  "keywords": [
+    "react",
+    "rexdux",
+    "redub",
+    "boilerplate",
+    "templates"
+  ],
+  "author": "Lukas Aichbauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rudolfsonjunior/redub-templates/issues"
+  },
+  "homepage": "https://github.com/rudolfsonjunior/redub-templates#readme"
+}
